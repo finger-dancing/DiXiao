@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+	<title>admin</title>
+
+	
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    
+    
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand nav-login" >登录</a>
+          
+          <a class="navbar-brand nav-logout" >登出</a>
+        </div>
+        <div class="collapse navbar-collapse">        
+      		<ul class="nav navbar-nav navbar-right">
+		        <li class="admin-nav ">
+		            <a href="#" class="accout-do" >账户管理</a>
+		        </li>
+		        <li class="admin-nav">
+		      		<a href="#" class="com-do" >公司信息</a>
+
+		        </li>
+		        <li class="admin-nav">
+		            <a href="#" class="ser-do" >业务管理</a>
+		        </li>            
+		        <li class="admin-nav">
+		            <a href="#" class="news-do" >新闻管理</a>
+		        </li>
+		        <li class="admin-nav">
+		            <a href="#" class="tech-do" >技术管理</a>
+		        </li>
+		       
+		    </ul>           
+        </div><!--/.nav-collapse -->
+      </div>    
+    </div> <!-- / .navigation -->
+
+    <div class="container content-table">
+	    <div class="accout-do">
+	        <div class="list-accout">
+	        	<a class="additem addaccoutitem pull-right" >新增</a>
+				<div class="table-main">			    
+				    <table class="table table-bordered " ">
+				        <thead>
+				            <tr>
+				                <th>用户名</th>
+				                <th>昵称</th>
+				                <th>邮箱</th>
+				                <th>选项</th>
+				            </tr>
+				        </thead>
+				        <tbody>
+				            
+				           <tr  >
+				               <td></td>
+				               <td></td>
+				               <td></td>
+				               <td data-id="" class="text-center">
+				                   <a class="edititem editaccoutitem">更改</a>
+				                   <a class="delitem delaccoutitem">删除</a>
+				                   
+				               </td>
+				           </tr> 
+				            
+				        </tbody>
+				    </table>
+				</div>
+	        </div>
+	        
+			
+	    </div>
+
+	    <div class="com-do">	    	
+        	<a class="editcomitem edititem pull-right" >更新</a>
+			<div class='com-info-set'>			    
+			    <h4>公司名称</h4>
+			    <div class="com-name com-name-set"></div>
+			    <h4>公司创办人</h4>
+			    <div class="com-founder com-founder-set"></div>
+			    <h4>创办时期</h4>
+			    <div class="com-founddate com-founddate-set"></div>
+			    <h4>公司简介</h4>
+			    <div class=" com-introducttion com-introducttion-set"></div>
+			    <h4>公司理念</h4>
+			    <div class="com-philosophy com-philosophy-set"></div>
+			    <h4>发展历程</h4>
+			    <div class="com-history com-history-set"></div>
+			</div>        
+	        
+	    </div>
+
+	    <div class="ser-do">
+	    	<div class="list-ser">
+	            <a class="additem addseritem pull-right" >新增</a>
+				<div class="product-grid">
+	                <div class="project-grid-text1">
+						<h4> voluptatibus maiores alias perferendis</h4>						
+						<a data-id="" class="more ser-more" >Read More</a>
+	            	</div>
+	            </div>
+              <div class="clearfix"> </div> 
+	        </div>
+	        <div class="list-ser-item back-list-item">
+              <div class="project-grid-text1">
+                <!-- <h4> voluptatibus maiores alias perferendis</h4>
+                              <div class="middle">
+                                  <h4>type</h4>                	
+                              </div>
+                              <img  class="newsimg" src="img/a1.jpg" alt=" " />
+                              <p> s voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                                ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                                ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                                ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                                ut aut reiciendis voluptatibus</p>
+                                <div class="video">
+                                  <video src="" controls="controls"></video>                
+                                </div>
+                                <div class="item-set">
+                                	<a class="edititem editseritem">更新</a>
+                                  <a class="list menuitem menuseritm">回目录</a>
+                                  <a class="delitem delseritem">删除</a>
+                                </div>   -->              
+               
+              </div>
+              <div class="clearfix"> </div>  
+            </div>
+	    		    	
+	    </div>
+
+	    <div class="news-do">
+	    	<div class="list-news">
+	            <a class="additem addnewsitem pull-right" >新增</a>
+				<div class="product-grid">
+	                <div class="project-grid-text1">
+						<!-- <h4> voluptatibus maiores alias perferendis</h4>						
+						<a data-id="" class="more news-more">Read More</a> -->
+	            	</div>
+	            </div>
+              <div class="clearfix"> </div> 
+	        </div>
+	        <div class="list-news-item back-list-item">
+              <div class="project-grid-text1">
+               <!--  <h4> voluptatibus maiores alias perferendis</h4>
+                          <div class="middle">
+                              <h4>type</h4>
+                          	<h5>writer</h5>
+                              <h5>date</h5>
+                          </div>
+                          <img  class="newsimg" src="img/a1.jpg" alt=" " />
+                          <p> s voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibus</p>
+                            <div class="video">
+                              <video src="" controls="controls"></video>                
+                            </div>
+                            <div class="item-set">
+                            	<a class="edititem editnewsitem">更新</a>
+                              <a class="list menuitem menunewsitm">回目录</a>
+                              <a class="delitem delnewsitem">删除</a>
+                            </div>      -->           
+               
+              </div>
+              <div class="clearfix"> </div>  
+            </div>
+	    </div>
+
+	    <div class="tech-do">
+	    	<div class="list-tech">
+	            <a class="additem addtechitem pull-right" >新增</a>
+				<div class="product-grid">
+	                <div class="project-grid-text1">
+						<!-- <h4> voluptatibus maiores alias perferendis</h4>						
+						<a data-id="" class="more tech-more" >Read More</a> -->
+	            	</div>
+	            </div>
+              <div class="clearfix"> </div> 
+	        </div>
+	        <div class="list-tech-item back-list-item">
+              <div class="project-grid-text1">
+                <!-- <h4> voluptatibus maiores alias perferendis</h4>
+                          <div class="middle">
+                              <h4>type</h4>                	
+                          </div>
+                          <img  class="newsimg" src="img/a1.jpg" alt=" " />
+                          <p> s voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibusItaque earum rerum hic tenetur a sapiente delectus, 
+                            ut aut reiciendis voluptatibus</p>
+                            <div class="video">
+                              <video src="" controls="controls"></video>                
+                            </div>
+                            <div class="item-set">
+                            	<a class="edititem edittechitem">更新</a>
+                              <a class="list menuitem menutechitm">回目录</a>
+                              <a class="delitem deltechitem">删除</a>
+                            </div>       -->          
+               
+              </div>
+              <div class="clearfix"> </div>  
+            </div>
+	    </div>
+
+    </div>    
+	
+	<!-- 登录模态框 -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			    <h4 class="modal-title" id="myModalLabel">登录</h4>
+			  </div>
+			  <div class="modal-body">
+			    <div class="contact-textarea">
+					<form>
+						<div>用户名</div>
+						<input type="text" value="" class="loginusername" />
+						<div>密码</div>
+						<input type="text" value="" class="loginpassword" />
+					</form>
+				</div>
+			  </div>
+			  <div class="modal-footer">
+			    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			    <button type="button" class="btn btn-primary login-save">保存</button>
+			  </div>
+			</div>
+		</div>
+	</div>  
+
+	<!-- 账户模态框 -->
+	<div class="modal fade" id="accoutModal" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">账户</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="contact-textarea">
+				<form>
+					<div>用户名</div>
+					<input type="text" value="" class="username" />
+					<div>密码</div>
+					<input type="text" value="" class="password" />
+					<div>昵称</div>
+					<input type="text" value="" class="nickname" />
+					<div>邮箱</div>
+					<input type="text" value="" class="email" />
+				</form>
+			</div>
+		  </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	        <button type="button" class="btn btn-primary accout-save" data-id="">保存</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- 公司信息模态框-->
+	<div class="modal fade" id="comModal" tabindex="-1" role="dialog" aria-hidden="true">
+	 <div class="modal-dialog">
+	   <div class="modal-content">
+	     <div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       <h4 class="modal-title" id="myModalLabel">公司</h4>
+	     </div>
+	     <div class="modal-body">
+	       <div class="contact-textarea">
+					<form>
+						<div>公司名称</div>
+						<input type="text"  class="cname" />
+						<div>创办人</div>
+						<input type="text"  class="cfounder" />
+						<div>创办日期 ( 格式：xxxx-xx-xx )</div>
+						<input type="text"  class="cfounddate" />
+						<div>公司简介</div>
+						<textarea  class="cintroduction"></textarea>  
+						<div>公司理念</div>
+						<textarea  class="cphilosophy" ></textarea> 
+						<div>发展历程</div>
+						<textarea  class="chistory" ></textarea> 
+					</form>
+			</div>
+		 </div>
+		
+	     <div class="modal-footer">
+	       <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	       <button type="button" class="btn btn-primary com-save" >保存</button>
+	     </div>
+	   </div>
+	 </div>
+	</div> 
+    
+    <!-- 新闻信息模态框-->
+	<div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-hidden="true">
+	 <div class="modal-dialog">
+	   <div class="modal-content">
+	     <div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       <h4 class="modal-title" id="myModalLabel">新闻</h4>
+	     </div>
+	     <div class="modal-body">
+	       <div class="contact-textarea">
+					<div class="newses">
+						<div>标题</div>
+						<input type="text"  class="ntitle" />
+						<div>类别</div>
+						<input type="text"  class="ntid" />
+						<div>作者</div>
+						<input type="text"  class="nauthor" />
+						<div>日期 ( 格式：xxxx-xx-xx )</div>
+						<input type="text"  class="npublishtime" />
+						<div>内容</div>
+						<textarea class="ncontent"></textarea>  
+						<div>图片( 格式：jpg、png )</div>
+                        <form name="Pic" class="Pic" enctype="multipart/form-data"> 
+							<input type="file" name="file" id="file"> 
+							<input type="button" name="submit" value="上传" class="fileSubmit">			
+						    <p class="npicture pics hide" /></p> 
+	                        <p class="status"></p>
+	                        <p class="preview"></p>
+						</form> 
+						<div>视频( 格式：MP4、mov )</div>
+						<form name="Vi" class="Vi" enctype="multipart/form-data"> 
+							<input type="file" name="file" id="file"> 
+							<input type="button" name="submit" value="上传" class="fileSubmit">			
+						    <p class="nvideo vis hide" ></p>
+	                        <p class="status"></p>
+	                        <p class="preview"></p>
+						</form> 
+					</div >
+			</div>
+		 </div>
+		
+	     <div class="modal-footer">
+	       <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	       <button type="button" class="btn btn-primary news-save" >保存</button>
+	     </div>
+	   </div>
+	 </div>
+	</div>
+
+	<!-- 业务信息模态框-->
+	<div class="modal fade" id="serModal" tabindex="-1" role="dialog" aria-hidden="true">
+	 <div class="modal-dialog">
+	   <div class="modal-content">
+	     <div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       <h4 class="modal-title" id="myModalLabel">业务</h4>
+	     </div>
+	     <div class="modal-body">
+	       <div class="contact-textarea">
+					<div >
+						<div>业务</div>
+						<input type="text"  class="sname" />
+						<div>类别</div>
+						<input type="text"  class="stid" />
+						<div>内容</div>
+						<textarea class="sintroduction"></textarea>  
+						<div>图片( 格式：jpg、png )</div>
+                        <form name="Pic" class="Pic" enctype="multipart/form-data"> 
+							<input type="file" name="file" id="file"> 
+							<input type="button" name="submit" value="上传" class="fileSubmit">			
+						    <p class="spicture pics hide" /></p> 
+	                        <p class="status"></p>
+	                        <p class="preview"></p>
+						</form> 
+						<div>视频( 格式：MP4、mov )</div>
+						<form name="Vi" class="Vi" enctype="multipart/form-data"> 
+							<input type="file" name="file" id="file"> 
+							<input type="button" name="submit" value="上传" class="fileSubmit">			
+						    <p class="svideo vis hide" ></p>
+	                        <p class="status"></p>
+	                        <p class="preview"></p>
+						</form>  
+					</div>
+			</div>
+		 </div>
+		
+	     <div class="modal-footer">
+	       <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	       <button type="button" class="btn btn-primary ser-save" >保存</button>
+	     </div>
+	   </div>
+	 </div>
+	</div>
+
+	<!-- 技术信息模态框-->
+	<div class="modal fade" id="techModal" tabindex="-1" role="dialog" aria-hidden="true">
+	 <div class="modal-dialog">
+	   <div class="modal-content">
+	     <div class="modal-header">
+	       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	       <h4 class="modal-title" id="myModalLabel">技术</h4>
+	     </div>
+	     <div class="modal-body">
+	       <div class="contact-textarea">
+					<div class="teches">
+						<div>技术</div>
+						<input type="text"  class="tname" />
+						<div>类别</div>
+						<input type="text"  class="ttid" />
+						<div>内容</div>
+						<textarea class="tintroduction"></textarea>  
+						<div>图片( 格式：jpg、png )</div>
+                        <form name="Pic" class="Pic" enctype="multipart/form-data"> 
+							<input type="file" name="file" id="file"> 
+							<input type="button" name="submit" value="上传" class="fileSubmit">			
+						    <p class="tpicture pics hide" /></p> 
+	                        <p class="status"></p>
+	                        <p class="preview"></p>
+						</form> 
+						<div>视频( 格式：MP4、mov )</div>
+						<form name="Vi" class="Vi" enctype="multipart/form-data"> 
+							<input type="file" name="file" id="file"> 
+							<input type="button" name="submit" value="上传" class="fileSubmit">			
+						    <p class="tvideo vis hide" ></p>
+	                        <p class="status"></p>
+	                        <p class="preview"></p>
+						</form> 
+					</div>
+			</div>
+		 </div>
+		
+	     <div class="modal-footer">
+	       <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	       <button type="button" class="btn btn-primary tech-save" >保存</button>
+	     </div>
+	   </div>
+	 </div>
+	</div>
+     
+
+    
+
+    
+	
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script> 
+    <script src="js/xhr.js"></script>   
+    <script src="js/back.js"></script> 
+</body>
+</html>
+

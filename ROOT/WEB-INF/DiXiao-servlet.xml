@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
+
+	<!-- 配置注解的适配器和映射器 -->
+	<mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
+	<mvc:resources location="/" mapping="/**"></mvc:resources>
+	<context:component-scan base-package="com.jzc.controller"/> 
+	
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="com.jzc.util.StringToDate"></bean>
+			</list>
+		</property>
+	</bean>
+	<!-- 配置multipart类型解析器 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
+	  
+	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	
+	<!-- JSON视图配置 -->
+	<!--
+	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+		  <property name="objectMapper">
+			<bean class="cn.com.citycloud.tpaas.common.domain.ObjectMapperFactoryBean" />
+		</property>
+		<property name="extractValueFromSingleKeyModel" value="true" />
+		<property name="modelKeys">
+			<set>
+				<value>responseResult</value>
+			</set>
+		</property>
+	</bean>
+	-->
+</beans>

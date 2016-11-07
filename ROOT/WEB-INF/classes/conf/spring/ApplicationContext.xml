@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+							http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context-4.2.xsd
+							">
+		<context:annotation-config></context:annotation-config>
+		<context:component-scan base-package="com.jzc.*"></context:component-scan>
+		
+		
+		<!-- 加载配置文件 -->
+		<context:property-placeholder location="classpath:conf/resource/db.properties"/>
+		<!-- 配置数据源 -->
+		<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+			destroy-method="close">
+			<property name="driverClassName" value="${jdbc_driver}"></property>
+			<property name="url" value="${jdbc_url}"></property>
+			<property name="username" value="${jdbc_username}"></property>
+			<property name="password" value="${jdbc_password}"></property>
+		</bean>
+		
+		<!-- 配置mybatis -->
+		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+			<property name="configLocation" value="classpath:conf/mybatis/MyBatis.xml"></property>
+			<property name="dataSource" ref="dataSource"></property>
+		</bean>
+		<!-- mapper批量扫描，从mapper包中扫描出mapper接口，自动创建代理对象并且在spring容器
+		中注册，需要遵循的规范：将mapper.java和mapper.xml映射文件名称保持一致，且在一个目录中 -->
+		<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+			<property name="basePackage" value="com.jzc.dao"></property>
+			<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+		</bean>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		                                 
+</beans>

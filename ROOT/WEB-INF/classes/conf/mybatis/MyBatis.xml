@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+
+	<typeAliases>
+		<typeAlias type="com.jzc.domain.Admin" alias="_Admin"></typeAlias>
+		<typeAlias type="com.jzc.domain.Business" alias="_Business"></typeAlias>
+		<typeAlias type="com.jzc.domain.BusinessType" alias="_BusinessType"></typeAlias>
+		<typeAlias type="com.jzc.domain.CompanyInfo" alias="_CompanyInfo"></typeAlias>
+		<typeAlias type="com.jzc.domain.CompanyInfoWithBLOBs" alias="_CompanyInfoWithBLOBs"></typeAlias>
+		<typeAlias type="com.jzc.domain.New" alias="_New"></typeAlias>
+		<typeAlias type="com.jzc.domain.NewType" alias="_NewType"></typeAlias>
+		<typeAlias type="com.jzc.domain.Technology" alias="_Technology"></typeAlias>
+		<typeAlias type="com.jzc.domain.TechType" alias="_TechType"></typeAlias>
+	</typeAliases>
+	
+	<mappers>
+		<package name="com.jzc.dao"></package>
+	</mappers>
+</configuration>

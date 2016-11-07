@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <!-- 数据库驱动包 -->
+  <classPathEntry location="D:\apache-maven-3.1.0\repos\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar"/>
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/dixiaodb" userId="root" password="12345" />
+    <!-- 生成实体类的包名和位置，这里配置将生成的实体类放在com.jzc.domain这个包下 -->
+    <javaModelGenerator targetPackage="com.jzc.domain" targetProject="D:\Program Files\MyEclipseWorkSpace\Water Maven Webapp\src\main\java" />
+    <!-- 生成的SQL映射文件包名和位置，这里配置将生成的SQL映射文件放在com.jzc.mapping这个包下 -->
+    <sqlMapGenerator targetPackage="com.jzc.mapping" targetProject="D:\Program Files\MyEclipseWorkSpace\Water Maven Webapp\src\main\java" />
+    <!-- 生成DAO的包名和位置，这里配置将生成的dao类放在com.jzc.dao这个包下 -->
+    <javaClientGenerator targetPackage="com.jzc.dao" targetProject="D:\Program Files\MyEclipseWorkSpace\Water Maven Webapp\src\main\java" type="XMLMAPPER" />
+    <!-- 要生成哪些表（更改tableName和domainObjectName就可以） -->
+    <!--  
+    <table schema="???" tableName="???" >
+      <columnOverride column="???" property="???" />
+    </table>
+  
+  -->
+  <table tableName="CompanyInfo" domainObjectName="CompanyInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+   <table tableName="News" domainObjectName="New" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+  <table tableName="NewsType" domainObjectName="NewType" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+    <table tableName="Admin" domainObjectName="Admin" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+   <table tableName="technology" domainObjectName="Technology" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+   <table tableName="techtype" domainObjectName="TechType" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" /> 
+    <table tableName="businesstype" domainObjectName="BusinessType" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+   <table tableName="business" domainObjectName="Business" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+   </context>
+   
+
+</generatorConfiguration>
